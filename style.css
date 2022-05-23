@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*****************************************Main Container Start*****************************************/
+
+.main-container{
+    background-image: linear-gradient(rgb(0, 132, 255),rgb(0, 225, 255));
+    min-height: 100vh;
+    margin: 0;
+    box-shadow: 0 0  4px 5px rgb(236, 226, 214) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************game container start*********************/
+.game-window{
+    height: 60vw;
+    width: 80vw;
+    background-color: rgb(57, 30, 83);
+    border-radius: 3em;
+    border: 4px solid rgb(44, 34, 34) ;
+    box-shadow: 0 0 4px 5px rgb(0, 68, 255);
+    transition: box-shadow 0.2s, border 1s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    max-width: 1200px;
+    max-height: 600px;
+
+    
+}
+
+.game-window:hover{
+    border: 4px solid rgb(255, 210, 210) ;
+    box-shadow: 0 0 4px 5px rgb(70, 31, 31); 
+}
+/************************gaem container end*********************/
+/*************item style start************/
+.item-style{
+    width: 24%;
+    height: 32%;
+    background-clip: content-box;
+    transition: box-shadow 0.4s, background-color 1s;   
+}
+.item-style:hover{      /*added to acheive hover effect*/
+    background-clip: content-box;
+    box-shadow: 0 0 3px 2px white;
+}
+
+.item-style-start {
+    background-color: antiquewhite;
+}
+/**************item style end**************/
